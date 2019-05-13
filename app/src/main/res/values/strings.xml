@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Meetup Registry</string>
+    <string name="general_greeting">Hello users</string>
+</resources>
