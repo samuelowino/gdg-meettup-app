@@ -1,9 +1,9 @@
 package org.aplusscreators.meetupregistry;
 
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
+import androidx.appcompat.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
          */
         setSupportActionBar(toolbar);
 
-        if (getSupportActionBar() != null){
+        if (getSupportActionBar() != null) {
             getSupportActionBar().setTitle(getResources().getString(R.string.app_name));
         }
 
@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
                 String reg = registrationNumberEditText.getText().toString();
                 String dateOfReg = dateOfRegEditText.getText().toString();
 
-                Toast.makeText(getApplicationContext(),"FN: " + firstName + " LN: " + lastName + " REG: " +reg + " DATE: " + dateOfReg,Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "FN: " + firstName + " LN: " + lastName + " REG: " + reg + " DATE: " + dateOfReg, Toast.LENGTH_LONG).show();
             }
         });
     }
