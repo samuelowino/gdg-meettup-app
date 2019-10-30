@@ -7,14 +7,15 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <android.support.v7.widget.Toolbar
+    <androidx.appcompat.widget.Toolbar
         app:titleTextColor="@android:color/white"
         android:id="@+id/registration_toolbar"
         android:background="@color/colorPrimary"
+        android:gravity="center_horizontal"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize">
 
-    </android.support.v7.widget.Toolbar>
+    </androidx.appcompat.widget.Toolbar>
 
     <TextView
         android:layout_marginTop="16dp"
@@ -27,34 +28,63 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-    <EditText
-        android:id="@+id/first_name_edit_text"
-        android:textSize="21sp"
-        android:hint="Enter First name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+     >
 
-    <EditText
-        android:id="@+id/last_name_edit_text"
-        android:textSize="21sp"
-        android:hint="Enter Last name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
 
-    <EditText
-        android:id="@+id/date_edit_text"
-        android:textSize="21sp"
-        android:hint="Enter Date"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+      <com.google.android.material.textfield.TextInputLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:padding="24dp">
+      <EditText
+          android:id="@+id/first_name_edit_text"
+          android:textSize="21sp"
+          android:hint="First name"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"/>
+      </com.google.android.material.textfield.TextInputLayout>
 
-    <EditText
-        android:id="@+id/reg_edit_text"
-        android:textSize="21sp"
-        android:hint="Enter Reg No"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+      <com.google.android.material.textfield.TextInputLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:padding="24dp">
+      <EditText
+          android:id="@+id/last_name_edit_text"
+          android:textSize="21sp"
+          android:hint="Last name"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"/>
+      </com.google.android.material.textfield.TextInputLayout>
 
+
+      <com.google.android.material.textfield.TextInputLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:padding="24dp">
+      <EditText
+          android:id="@+id/date_edit_text"
+          android:textSize="21sp"
+          android:hint="Date"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" />
+      </com.google.android.material.textfield.TextInputLayout>
+
+      <com.google.android.material.textfield.TextInputLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:padding="24dp">
+      <EditText
+          android:id="@+id/reg_edit_text"
+          android:textSize="21sp"
+          android:hint="Reg No"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"/>
+      </com.google.android.material.textfield.TextInputLayout>
+
+  </LinearLayout>
     <Button
         android:id="@+id/submit_button"
         android:layout_gravity="bottom"
